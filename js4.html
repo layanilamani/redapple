@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box
+        {
+            width: 200px;
+            height: 200px;
+            background-color: blue;
+            position: absolute;
+            z-index: -1;
+            ;
+            
+        }
+    </style>
+    <script>
+        function moveme() {
+            var box = document.getElementById('box');
+            var ml = parseInt(box.style.marginLeft);
+            box.style.marginLeft = (ml+ 10) + "px";            
+            
+        }
+    </script>
+</head>
+
+<body onkeydown="moveme()" style="overflow: hidden;">
+    
+    <div id="box" style="margin-left: 10px;transform: rotateZ(30deg);">
+
+    </div>
+    <button onclick="moveme()">
+        move the box
+    </button>
+</body>
+</html>

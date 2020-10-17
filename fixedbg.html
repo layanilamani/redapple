@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Squada+One&display=swap" rel="stylesheet">
+
+    <style>
+        html {
+            scroll-behavior: smooth;
+            overflow-x:hidden;
+        }
+        body
+        {
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+        }
+        .section1  
+        {
+            background: url(images/omid-armin-xOjzehJ49Hk-unsplash.jpg); 
+            clip-path: polygon(0 15%, 100% 0%, 100% 85%, 0% 100%);        
+            
+        }         
+       
+        .section3
+        {
+            background: url(images/gabriel-baranski-vGICUyYW2CE-unsplash.jpg);           
+            clip-path: polygon(0 0, 100% 15%, 100% 100%, 0% 100%);
+        }
+         .section2
+        {
+            background: url(images/isaac-mehegan-sVRSQNPJMq4-unsplash.jpg); 
+            clip-path: polygon(0 0, 100% 15%, 100% 100%, 0 85%);
+        }
+        .sec
+        {
+            background-size: cover;            
+            background-position: center;
+            background-attachment: fixed;
+            height: 100vh;
+        }
+        .caption
+        {
+            color: white;
+            font-size: 48px;          
+            opacity: 0.5;
+            text-align: center;
+            position: relative;
+            top: 50%;            
+            letter-spacing: 20px;
+            
+        }
+        .caption
+        {
+            padding: 20px;
+            transition: all 3s ease;  
+            /* background-color: rgb(58, 58, 58); */
+            text-shadow: 0 0 5px #FFF,
+                         0 0 10px #FFF, 
+                         0 0 15px #FFF, 
+                         0 0 20px #fff, 
+                         0 0 30px #fff, 
+                         0 0 40px #000,
+                         0 0 55px #000000, 
+                         0 0 75px #000000;  
+        }
+
+        .caption:hover {
+             
+             transform: scale(1.5);
+             opacity: 0;
+         }
+        header
+        {
+            width: 100vw;
+            text-align: center;
+            z-index: 50;
+            position: fixed;
+        }
+        .header-caption
+        {
+            color: white;
+            
+        }
+        .logo
+        {
+            background-image: linear-gradient(to right, rgb(255, 255, 255) 0%, rgb(246, 246, 246) 47%, rgb(237, 237, 237) 100%);
+            display: inline-block;
+            margin-top:50px;
+            padding-left: 50px;
+            padding-right:50px;
+            border-radius: 25px;
+            box-shadow: rgba(0, 0, 0, 0.53) 0px 10px 25px 1px;             
+        }
+        .logo ul{
+            display: inline-block;
+            list-style: none;
+        }
+        .logo ul li
+        {
+            display: inline;
+            margin-left: 50px;
+        }
+        .logo ul li a
+        {
+            text-decoration: none;
+            font-family: 'Squada One', cursive;
+            font-size: 18px;
+            color: rgba(58, 58, 58)
+        }
+        .logo img{
+            position: absolute;
+            margin-top: 10px;
+            height: 35px;           
+        }
+
+      
+    </style>
+</head>
+<body>
+
+
+    <header>
+        <div class="header-caption">
+            <span class="logo">
+                <img src="images/logo.png" alt="">
+                <ul>
+                    <li>
+                        <a href="#face">Face</a>
+                    </li>
+                    <li><a href="#flower">Flower</a></li>
+                    <li><a href="#joy">Joy</a></li>
+    
+                </ul>
+            </span>
+             
+        </div> 
+    </header>
+
+    <section id="face" class="section1 sec">
+        <div class="caption">
+            <span class="text">
+                Face Off Face
+            </span>
+        </div>
+    </section>    
+
+
+    <section id="flower" class="section2 sec">
+        <div class="caption">
+            <span class="text">
+                Flower has Flower
+            </span>
+        </div>
+    </section> 
+
+    
+    <section id="joy" class="section3 sec">
+        <div class="caption">
+            <span class="text">
+                The Joy
+            </span>
+        </div>
+    </section> 
+
+</body>
+</html>

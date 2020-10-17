@@ -1,0 +1,41 @@
+#header
+		{
+			background-color: none; height: 200px;
+			position: fixed;
+			width: 100%;
+			z-index: 20;
+		}
+
+		#content
+		{
+			background-color: orange; 
+			min-height: 400px;
+			margin-top: 200px;
+			
+			position: absolute;
+			/*
+			this will not work at all.
+			 height: 400px;
+			*/
+		}
+
+		#footer
+		{
+			clear: both;
+			background-color: gray;
+			text-align: center;
+			color: white; 
+			width: 100%;
+			position: fixed;
+			height: 100px;			
+			bottom: 0;
+			margin-top: 200px;
+		}
+		#logo
+		{
+			height: 100px;
+		}
+		body
+		{
+			margin: 0px;
+		}

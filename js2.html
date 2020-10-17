@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table tr td input {
+            width: 75px;           
+        }
+        #display {
+            width: 75px;
+           direction: rtl;
+        }
+
+        body{
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <script>
+        function writeindisplay(number) {
+            document.getElementById('display').value += number;
+            document.getElementById('input').value += number;
+        }
+
+        function doOperation(op)
+        {
+            document.getElementById('input').value += op;
+            document.getElementById('display').value = '';
+        }
+        function calculate() {
+           var output =  eval(document.getElementById('input').value  );
+           document.getElementById('display').value = output;
+           document.getElementById('input').value = output;
+        }
+    </script>
+    <table border="1">
+        <tr>
+            <td colspan="3"><input type="text" onkeyup="calculate()" id="input" value=""></td>
+        </tr>
+        <tr>
+            <td colspan="3"><input type="text" id="display" value=""></td>
+        </tr>
+        <tr>
+            <td><button onclick="writeindisplay(1)">1</button></td>
+            <td><button onclick="writeindisplay(2)">2</button></td>
+            <td><button onclick="writeindisplay(3)">3</button></td>
+        </tr>
+        <tr>
+            <td><button onclick="doOperation('+')">+</button></td>
+            <td>-</td>
+            <td>*</td>
+        </tr>
+        <tr>
+            <td><button onclick="calculate('=')">=</button></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+</body>
+
+</html>
